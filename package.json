@@ -146,9 +146,7 @@
     }
   ],
   "exports": {
-    "import": "./build/index.js",
-    "require": "./build/index.js",
-    "default": "./build/index.js"
+    ".": "./build/index.js"
   }
 
 }

@@ -144,5 +144,11 @@
       "name": "rrag",
       "email": "ragunath.ramaswamy@gmail.com"
     }
-  ]
+  ],
+  "exports": {
+    "import": "./build/index.js",
+    "require": "./build/index.js",
+    "default": "./build/index.js"
+  }
+
 }

@@ -2,8 +2,8 @@
   "name": "react-stockcharts",
   "version": "0.7.8",
   "description": "Highly customizable stock charts with ReactJS and d3",
-  "main": "build/index.js",
-  "module": "build/index.js",
+  "main": "src/index.js",
+  "module": "src/index.js",
   "author": {
     "name": "Ragu Ramaswamy"
   },
@@ -21,7 +21,7 @@
     "babel:es:watch": "npm run babel:es -- -watch",
     "babel:cjs": "cross-env BABEL_ENV=cjs babel src --out-dir build --source-maps",
     "babel:es": "cross-env BABEL_ENV=es babel src --out-dir build/es --source-maps",
-    "release": "npm run clean && npm run babel:cjs && npm run babel:es && cp README.md build/",
+    "release": "npm run clean && npm run babel:cjs && npm run babel:es && cp README.md build/ && node scripts/release.js",
     "lint": "eslint --ext .js,.jsx src --fix",
     "upgrade:patch": "npm version patch",
     "preversion": "npm run lint",
